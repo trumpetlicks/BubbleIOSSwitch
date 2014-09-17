@@ -13,15 +13,27 @@ thing about this object is that it will allow users to have the SAME EXACT looki
 This object performs similar animation between on / off states.  One difference between this object and Apple's is that this
 object notifies the holder's delegate of an action only AFTER the animation has finished (instead of at first touch).
 
-Drawing:
+Drawing
 =================
 This object will draw a 51 px wide x 31 px high switch all the way left and vertically centered within whatever sized rect the switch is initialized with
 
 
-TO USE:
-to use this object, the easiest way is:
+TO USE
+=================
+the easiest way is:
   - Include both the .h and .m files within your project  
   - put a standard UIView on whatever view you wish to have the switch on, within your xib file.
   - define that newly placed UIView as a "BubbleIOSSwitch" within the xib file.
   - the UIView should be sized no smaller than 51 px wide x 31 px high (it can be larger, but look at the drawing note above)
   
+Version History
+=================
+v1.0 - initial upload
+
+Future Releases
+=================
+- Potentially a vertially oriented version (as opposed to horizontally functioning)
+- Ability to define generic text name for switch that will draw at a placement of the user's choosing
+- Ability to define on and off texts that will draw:
+  * off text to be drawn to the left of the switch if in horizontal or below the switch when vertical
+  * on text to be drawn to the right of the switch if in horizontal or above the switch when vertical
